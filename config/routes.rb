@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  root 'welcome#index'
   resources :items, only: [:show]
   resources :costumes do
     resources :items

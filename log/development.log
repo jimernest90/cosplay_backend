@@ -14086,3 +14086,58 @@ Processing by CostumesController#index as HTML
 Completed 200 OK in 34ms (Views: 0.7ms | ActiveRecord: 4.9ms | Allocations: 2864)
 
 
+Started GET "/costumes" for 127.0.0.1 at 2020-01-16 14:11:43 -0500
+Processing by CostumesController#index as HTML
+  [1m[36mCostume Load (1.4ms)[0m  [1m[34mSELECT "costumes".* FROM "costumes"[0m
+  ↳ app/controllers/costumes_controller.rb:8:in `index'
+  [1m[36mItem Load (0.9ms)[0m  [1m[34mSELECT "items".* FROM "items" WHERE "items"."costume_id" = $1[0m  [["costume_id", 22]]
+  ↳ app/controllers/costumes_controller.rb:8:in `index'
+  [1m[36mItem Load (0.4ms)[0m  [1m[34mSELECT "items".* FROM "items" WHERE "items"."costume_id" = $1[0m  [["costume_id", 23]]
+  ↳ app/controllers/costumes_controller.rb:8:in `index'
+Completed 200 OK in 35ms (Views: 0.8ms | ActiveRecord: 3.2ms | Allocations: 2864)
+
+
+Started GET "/costumes" for 127.0.0.1 at 2020-01-16 14:17:34 -0500
+Processing by CostumesController#index as HTML
+  [1m[36mCostume Load (1.2ms)[0m  [1m[34mSELECT "costumes".* FROM "costumes"[0m
+  ↳ app/controllers/costumes_controller.rb:8:in `index'
+  [1m[36mItem Load (0.5ms)[0m  [1m[34mSELECT "items".* FROM "items" WHERE "items"."costume_id" = $1[0m  [["costume_id", 22]]
+  ↳ app/controllers/costumes_controller.rb:8:in `index'
+  [1m[36mItem Load (3.5ms)[0m  [1m[34mSELECT "items".* FROM "items" WHERE "items"."costume_id" = $1[0m  [["costume_id", 23]]
+  ↳ app/controllers/costumes_controller.rb:8:in `index'
+Completed 200 OK in 16ms (Views: 0.1ms | ActiveRecord: 5.4ms | Allocations: 2864)
+
+
+Started GET "/costumes" for 127.0.0.1 at 2020-01-16 14:18:28 -0500
+Processing by CostumesController#index as HTML
+  [1m[36mCostume Load (0.5ms)[0m  [1m[34mSELECT "costumes".* FROM "costumes"[0m
+  ↳ app/controllers/costumes_controller.rb:8:in `index'
+  [1m[36mItem Load (0.3ms)[0m  [1m[34mSELECT "items".* FROM "items" WHERE "items"."costume_id" = $1[0m  [["costume_id", 22]]
+  ↳ app/controllers/costumes_controller.rb:8:in `index'
+  [1m[36mItem Load (0.3ms)[0m  [1m[34mSELECT "items".* FROM "items" WHERE "items"."costume_id" = $1[0m  [["costume_id", 23]]
+  ↳ app/controllers/costumes_controller.rb:8:in `index'
+Completed 200 OK in 9ms (Views: 0.1ms | ActiveRecord: 1.1ms | Allocations: 2765)
+
+
+Started GET "/costumes" for 127.0.0.1 at 2020-01-16 14:18:37 -0500
+Processing by CostumesController#index as HTML
+  [1m[36mCostume Load (0.4ms)[0m  [1m[34mSELECT "costumes".* FROM "costumes"[0m
+  ↳ app/controllers/costumes_controller.rb:8:in `index'
+  [1m[36mItem Load (0.9ms)[0m  [1m[34mSELECT "items".* FROM "items" WHERE "items"."costume_id" = $1[0m  [["costume_id", 22]]
+  ↳ app/controllers/costumes_controller.rb:8:in `index'
+  [1m[36mItem Load (1.0ms)[0m  [1m[34mSELECT "items".* FROM "items" WHERE "items"."costume_id" = $1[0m  [["costume_id", 23]]
+  ↳ app/controllers/costumes_controller.rb:8:in `index'
+Completed 200 OK in 16ms (Views: 0.2ms | ActiveRecord: 2.3ms | Allocations: 2765)
+
+
+Started GET "/costumes" for 127.0.0.1 at 2020-01-16 14:18:54 -0500
+Processing by CostumesController#index as HTML
+  [1m[36mCostume Load (7.4ms)[0m  [1m[34mSELECT "costumes".* FROM "costumes"[0m
+  ↳ app/controllers/costumes_controller.rb:8:in `index'
+  [1m[36mItem Load (0.5ms)[0m  [1m[34mSELECT "items".* FROM "items" WHERE "items"."costume_id" = $1[0m  [["costume_id", 22]]
+  ↳ app/controllers/costumes_controller.rb:8:in `index'
+  [1m[36mItem Load (6.4ms)[0m  [1m[34mSELECT "items".* FROM "items" WHERE "items"."costume_id" = $1[0m  [["costume_id", 23]]
+  ↳ app/controllers/costumes_controller.rb:8:in `index'
+Completed 200 OK in 25ms (Views: 0.2ms | ActiveRecord: 14.2ms | Allocations: 2765)
+
+
